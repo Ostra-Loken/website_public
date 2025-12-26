@@ -1,0 +1,63 @@
+#arkiv_title {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 2px;
+    text-decoration-color: var(--primary-color);
+}
+
+.archiveentry {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    border: 0px;
+    border-top: 2px;
+    border-style: solid;
+    border-color: var(--darkest-bg-color);
+    color: var(--text-color);
+    text-decoration: none;
+    animation: entryunhoveranim 0.2s;
+}
+
+.archiveentry:hover {
+    color: var(--primary-color);
+    animation: entryhoveranim 0.2s;
+}
+
+#archive {
+    width: 80%;
+    border: 0px;
+    border-bottom: 2px;
+    border-style: solid;
+    border-color: var(--darkest-bg-color);
+    margin: 7px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.vecka {
+    margin: 5px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+@keyframes entryhoveranim {
+  from {
+    color: var(--text-color);
+    }
+  to {
+    color: var(--primary-color);
+    }
+}
+
+@keyframes entryunhoveranim {
+  from {
+    color: var(--primary-color);
+    }
+  to {
+    color: var(--text-color);
+    }
+}

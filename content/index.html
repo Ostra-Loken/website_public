@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Löknet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header"></div>
+    <div style="display: flex; justify-content: center;">
+        <div class="sidebar"></div>
+    </div>
+    <div class="main">
+        <img src="title.png" style="height: 10rem;">
+        <h2 class="slogan">Hotfullt nära verkligheten!</h2>
+        <div class="cards">
+            <a id="latestpapercard" class="mainlink" >
+            <div class="maincard" style="width: 60%; height: 5em; display: flex; flex-direction: column; justify-content: center; margin: 3rem;">
+                <p class="maintext">Läs senaste numret nu!</p>
+            </div>
+            </a>
+            <a href="https://forms.gle/xKhYg32ubMYWjMt9A" class="mainlink">
+            <div class="maincard">
+                <p class="maintext">Insändare</p>
+            </div>
+            </a>
+            <a href="https://forms.gle/A7u7o3BcSJVCMVya6" class="mainlink">
+            <div class="maincard">
+                <p class="maintext">Anonym hear me out</p>
+            </div>
+            </a>
+            <a href="https://forms.gle/LSA97m2rY7SwUHy18" class="mainlink">
+            <div class="maincard">
+                <p class="maintext">Skåpleverans</p>
+            </div>
+            </a>
+            <a href="https://www.instagram.com/p/DQ2Z7MHDLdb/" class="mainlink">
+            <div class="maincard">
+                <p class="maintext">Instagram</p>
+            </div>
+            </a>
+            <a href="https://www.youtube.com/@%C3%96straL%C3%B6ken" class="mainlink">
+            <div class="maincard">
+                <p class="maintext">Youtube</p>
+            </div>
+            </a>
+            <a href="https://www.google.com/maps/place/%C3%96stra+L%C3%B6ken/@59.2227894,18.1481556,228m/data=!3m1!1e3!4m6!3m5!1s0x465f79ec61ab3141:0x23930ef67939fd39!8m2!3d59.2227894!4d18.1491392!16s%2Fg%2F11xg42f6_g!5m1!1e2?entry=ttu&g_ep=EgoyMDI1MDkwMy4wIKXMDSoASAFQAw%3D%3D" class="mainlink">
+            <div class="maincard">
+                <p class="maintext">Google Maps</p>
+            </div>
+            </a>
+        </div>
+    </div>
+    <div style="display: 1 1 auto;"></div>
+    <footer id="footer" class="footer" style="display: flex; justify-content: center;"></footer> 
+    <script src="../include/include.js"></script>
+    <script type="module">
+        import init, { initrs } from "../wasm/linkprovider/pkg/liblinkprovider.js";
+
+            init().then(() => {
+                initrs();
+            });
+    </script>
+</body>
+</html>

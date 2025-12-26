@@ -1,0 +1,6 @@
+#om_title {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 2px;
+    text-decoration-color: var(--primary-color);
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Löknet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="arkiv.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header"></div>
+    <div style="display: flex; justify-content: center;">
+        <div class="sidebar"></div>
+    </div>
+    <div class="main">
+        <h1 class="titel">Välkommen till arkivet!</h1>
+        <div id="archive"></div>
+    </div>
+    <footer id="footer" class="footer" style="display: flex; justify-content: center;"></footer> 
+    <script src="../include/include.js"></script>
+    <script type="module">
+        import init, { initrs } from "../wasm/archiveprovider/pkg/libarchiveprovider.js";
+
+            init().then(() => {
+                initrs();
+            });
+    </script>
+</body>
+</html>
