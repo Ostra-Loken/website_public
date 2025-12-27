@@ -218,12 +218,12 @@ export function initrs() {
     wasm.initrs();
 }
 
-function wasm_bindgen__convert__closures_____invoke__hdd189b0cbe04b51f(arg0, arg1, arg2) {
-    wasm.wasm_bindgen__convert__closures_____invoke__hdd189b0cbe04b51f(arg0, arg1, arg2);
-}
-
 function wasm_bindgen__convert__closures_____invoke__haeb96f5a6dd62599(arg0, arg1) {
     wasm.wasm_bindgen__convert__closures_____invoke__haeb96f5a6dd62599(arg0, arg1);
+}
+
+function wasm_bindgen__convert__closures_____invoke__hdd189b0cbe04b51f(arg0, arg1, arg2) {
+    wasm.wasm_bindgen__convert__closures_____invoke__hdd189b0cbe04b51f(arg0, arg1, arg2);
 }
 
 const __wbindgen_enum_RequestCache = ["default", "no-store", "reload", "no-cache", "force-cache", "only-if-cached"];
