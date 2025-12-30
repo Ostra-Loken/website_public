@@ -4,3 +4,25 @@
     text-underline-offset: 2px;
     text-decoration-color: var(--primary-color);
 }
+
+.pfp {
+    width: 15em;
+    height: 15em;
+    border-radius: 50%;
+    border: 4px;
+    border-style: solid;
+    border-color: var(--primary-color);
+    object-fit: cover;
+}
+
+.namn {
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.text {
+    color: var(--text-color);
+    margin: 25px;
+    font-size: 20px;
+}
